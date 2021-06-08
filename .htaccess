@@ -1,0 +1,14 @@
+RewriteEngine on
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks -MultiViews
+
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_URI} ^/tasks/api/tasks
+    RewriteRule ^tasks/api/tasks(.*)$ laravel/public/api/tasks$1 [L,NC,R]
+
+    RewriteCond %{REQUEST_URI} ^/tasks
+    RewriteRule ^tasks$ /tasks/index.html [L,NC,QSA]
+
+</IfModule>

@@ -1,0 +1,6 @@
+[submodule "ember-quickstart"]
+	path = ember-quickstart
+	url = git@github.com:moshefortgang/ember-tasks.git
+[submodule "laravel"]
+	path = laravel
+	url = git@github.com:moshefortgang/laravel-tasks.git
